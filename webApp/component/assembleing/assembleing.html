@@ -1,0 +1,2334 @@
+ <div class="build-station">
+            <button class="m1">组装1</button>
+            <button class="m2">组装2</button>
+            <button class="trays">tray盘</button>
+            <div class="station1">
+                <button >工位1</button>
+                <p>{{lefttotal}}</p>
+                <progress max="100" [value]="lefttotal"></progress>
+            </div>
+            <div class="station2">
+                <button>工位2</button>
+                <p>{{righttotal}}</p>
+                <progress max="100" [value]="righttotal"></progress>
+            </div>
+            <p>sdgdsafgds{{stationItem.isANSIleft}}</p>
+            <ul class="keycaps1 content  installation ansic" [ngStyle]="{'z-index':stationItem.isANSIleft == true ? 100 : 1}"  [ngClass]="ansileftupstyle" >
+                <li class=" first-line esc ">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  esc"> </li>
+                <li class="esc"> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin "></li>
+
+                <li class="enter ">
+                    <div   style="position: absolute; left: 10px; top: 171px; opacity:0;">
+                        <span>0</span>
+                        <span>中/英</span>
+                    </div>
+
+                </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin enter ">
+                    <div   style="position: absolute; left: 827px; top: 171px;opacity:0;">
+                        <span>2</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="shift ">
+                    <div  style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  shift">
+                    <div   style="position: absolute; left: 795px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="command"> </li>
+                <li class="space">
+                    <div  style="position: absolute; left: 282px; top: 299px;opacity:0;" [ngClass]="{'up2':(assemblingClass.leftchangeclass == true && stationItem.isANSIleft == true),'show':assemblingClass.leftshowclass==true && stationItem.isANSIleft == true}">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+                </li>
+                <li class="command"> </li>
+                <li></li>
+                <!--方向键-->
+                <li> </li>
+                <ol class="arrow ">
+                    <li>
+                        <div class="arrow-up  " style="position: absolute; left: 812px; top: 299px;opacity:0;" [ngClass]="{'up2':(assemblingClass.leftchangeclass == true && stationItem.isANSIleft == true),'show':assemblingClass.leftshowclass==true && stationItem.isANSIleft == true}">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="arrow-down  " style="position: absolute; left: 812px; top: 330px;opacity:0;" [ngClass]="{'up2':(assemblingClass.leftchangeclass == true && stationItem.isANSIleft == true),'show':assemblingClass.leftshowclass==true && stationItem.isANSIleft == true}">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="keycaps1 content  installation ansic" [ngStyle]="{'z-index':stationItem.isANSIright == true ? 100 : 1 }" [ngClass]="ansiupstyle">
+                <li class=" first-line esc ">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  esc"> </li>
+                <li class="esc"> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin "></li>
+
+                <li class="enter ">
+                    <div   style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>中/英</span>
+                    </div>
+
+                </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin enter ">
+                    <div  style="position: absolute; left: 827px; top: 171px;opacity:0;">
+                        <span>2</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="shift ">
+                    <div style="position: absolute; left: 10px; top: 235px; opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  shift">
+                    <div   style="position: absolute; left: 795px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="command"> </li>
+                <li class="space ">
+                    <div   style="position: absolute; left: 282px; top: 299px;opacity:0;"  [ngClass]="{'up2':(assemblingClass.rightchangeclass == true && stationItem.isANSIright == true),'show':assemblingClass.rightshowclass==true && stationItem.isANSIright == true}">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+                </li>
+                <li class="command"> </li>
+                <li> </li>
+                <!--方向键-->
+                <li> </li>
+                <ol class="arrow ">
+                    <li>
+                        <div class="arrow-up  " style="position: absolute; left: 812px; top: 299px;opacity:0;" [ngClass]="{'up2':(assemblingClass.rightchangeclass == true && stationItem.isANSIright == true),'show':assemblingClass.rightshowclass==true && stationItem.isANSIright == true}">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="arrow-down " style="position: absolute; left: 812px; top: 330px;opacity:0;" [ngClass]="{'up2':(assemblingClass.rightchangeclass == true && stationItem.isANSIright == true),'show':assemblingClass.rightshowclass==true && stationItem.isANSIright == true}">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="keycaps1 content  installation iso" [ngStyle]="{'z-index':stationItem.isISOleft == true ? 100 : 1 }" [ngClass]="isoleftupstyle" >
+                <li class=" first-line esc">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin esc"> </li>
+
+                <li class="esc"> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return">
+                    <div  style="position: absolute; left: 876px; top: 107px;opacity:0;">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div style="position: absolute; left: 10px; top: 171px; opacity:0;">
+                        <span>0</span>
+                        <span>caps lock</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift1">
+                    <div   style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift2">
+                    <div  style="position: absolute; left: 797px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="command"></li>
+                <li class="space">
+                    <div style="position: absolute; left: 282px; top: 299px;opacity:0; "  [ngClass]="{'up2':(assemblingClass.leftchangeclass == true && stationItem.isISOleft == true ),'show':assemblingClass.leftshowclass==true && stationItem.isISOleft == true }">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+                </li>
+                <li class="command"> </li>
+                <li></li>
+
+                <!--方向键-->
+                <li></li>
+                <ol class="arrow">
+                    <li class="arrow-up">
+                        <div style="position: absolute; left: 812px; top: 299px;opacity:0;"  [ngClass]="{'up2':(assemblingClass.leftchangeclass == true && stationItem.isISOleft == true ),'show':assemblingClass.leftshowclass==true && stationItem.isISOleft == true }">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down">
+                        <div  style="position: absolute; left: 812px; top: 330px;opacity:0;"  [ngClass]="{'up2':(assemblingClass.leftchangeclass == true && stationItem.isISOleft == true ),'show':assemblingClass.leftshowclass==true && stationItem.isISOleft == true }">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="keycaps1 content  installation iso" [ngStyle]="{'z-index':stationItem.isISOright == true ? 100 : 1 }" [ngClass]="isoupstyle">
+                <li class=" first-line esc">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin esc"> </li>
+
+                <li class="esc"> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return">
+                    <div style="position: absolute; left: 876px; top: 107px;opacity:0;">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div  style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>caps lock</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift1">
+                    <div style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift2">
+                    <div style="position: absolute; left: 797px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="command"></li>
+                <li class="space">
+                    <div  style="position: absolute; left: 282px; top: 299px;opacity:0;" [ngClass]="{'up2':(assemblingClass.rightchangeclass == true && stationItem.isISOright == true  ),'show':assemblingClass.rightshowclass==true &&stationItem.isISOright == true }">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command"> </li>
+                <li></li>
+
+                <!--方向键-->
+                <li></li>
+                <ol class="arrow">
+                    <li class="arrow-up">
+                        <div  style="position: absolute; left: 812px; top: 299px;opacity:0;"  [ngClass]="{'up2':(assemblingClass.rightchangeclass == true && stationItem.isISOright == true  ),'show':assemblingClass.rightshowclass==true &&stationItem.isISOright == true }">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down">
+                        <div  style="position: absolute; left: 812px; top: 330px;opacity:0;" [ngClass]="{'up2':(assemblingClass.rightchangeclass == true && stationItem.isISOright == true  ),'show':assemblingClass.rightshowclass==true&&stationItem.isISOright == true }">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="keycaps1 content  installation jis" [ngStyle]="{'z-index':stationItem.isJISleft == true ? 100 : 1 }" [ngClass]="jisleftupstyle" >
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class="clear-margin first-line esc"> </li>
+
+
+                <li class="esc"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin "></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return">
+                    <div  style="position: absolute; left: 842px; top: 107px;opacity:0;">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div   style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>control</span>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift">
+                    <div   style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift">
+                    <div style="position: absolute; left: 827px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li class="command"> </li>
+                <li class="command"> </li>
+                <li class="space">
+                    <div   style="position: absolute; left: 298px; top: 299px;opacity:0; " [ngClass]="{'up2':(assemblingClass.leftchangeclass == true && stationItem.isJISleft == true ),'show':assemblingClass.leftshowclass==true &&stationItem.isJISleft == true }">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command">  </li>
+                <li class="command"></li>
+                <li>   </li>
+                <!--方向键-->
+
+
+                <li>  </li>
+                <ol class="arrow">
+                    <li class="arrow-up">
+                        <div   style="position: absolute; left: 812px; top: 299px;opacity:0;" [ngClass]="{'up2':(assemblingClass.leftchangeclass == true && stationItem.isJISleft == true ),'show':assemblingClass.leftshowclass==true &&stationItem.isJISleft == true }">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down">
+                        <div  style="position: absolute; left: 812px; top: 330px;opacity:0;" [ngClass]="{'up2':(assemblingClass.leftchangeclass == true && stationItem.isJISleft == true ),'show':assemblingClass.leftshowclass==true &&stationItem.isJISleft == true }">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+                <li class="clear-margin"></li>
+            </ul>
+            <ul class="keycaps1 content  installation jis" [ngStyle]="{'z-index':stationItem.isJISright == true ? 100 : 1 }" [ngClass]="jisupstyle" >
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class="clear-margin first-line esc"> </li>
+
+
+                <li class="esc"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin "></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return">
+                    <div   style="position: absolute; left: 842px; top: 107px;opacity:0;">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>control</span>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift">
+                    <div  style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift">
+                    <div style="position: absolute; left: 827px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li class="command"> </li>
+                <li class="command"> </li>
+                <li class="space" >
+                    <div   style="position: absolute; left: 298px; top: 299px;opacity:0; " [ngClass]="{'up2':(assemblingClass.rightchangeclass == true && stationItem.isJISright==true ),'show':assemblingClass.rightshowclass==true &&stationItem.isJISright==true}">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command">  </li>
+                <li class="command"></li>
+                <li>   </li>
+                <!--方向键-->
+
+
+                <li>  </li>
+                <ol class="arrow">
+                    <li class="arrow-up">
+                        <div style="position: absolute; left: 812px; top: 299px;opacity:0;" [ngClass]="{'up2':(assemblingClass.rightchangeclass == true && stationItem.isJISright==true ),'show':assemblingClass.rightshowclass==true &&stationItem.isJISright==true}">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down">
+                        <div  style="position: absolute; left: 812px; top: 330px;opacity:0;" [ngClass]="{'up2':(assemblingClass.rightchangeclass == true && stationItem.isJISright==true ),'show':assemblingClass.rightshowclass==true &&stationItem.isJISright==true}">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+                <li class="clear-margin"></li>
+            </ul>
+            <!--按键-->
+            <ul class="keycaps2 content  material ansic" [ngStyle]="{'z-index':stationItem.isANSIleft == true ? 100 : 1 }" [ngClass]="ansileftdownstyle" >
+                <li class=" first-line esc ">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  esc"> </li>
+                <li class="esc"> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin "></li>
+
+                <li class="enter ">
+                    <div style="position: absolute; left: 10px; top: 171px;opacity:0">
+                        <span>0</span>
+                        <span>中/英</span>
+                    </div>
+
+                </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin enter ">
+                    <div style="position: absolute; left: 827px; top: 171px;opacity:0">
+                        <span>2</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="shift ">
+                    <div style="position: absolute; left: 10px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  shift">
+                    <div style="position: absolute; left: 795px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="command"> </li>
+                <li class="space " >
+                    <div  style="position: absolute; left: 282px; top: 299px;" [ngClass]="{'empty':assemblingClass.leftassembclass == true && stationItem.isANSIleft == true,'up1':assemblingClass.leftup1class==true&& stationItem.isANSIleft == true }">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+                </li>
+                <li class="command"> </li>
+                <li> </li>
+                <!--方向键-->
+                <li> </li>
+                <ol class="arrow ">
+                    <li>
+                        <div class="arrow-up " style="position: absolute; left: 812px; top: 299px;" [ngClass]="{'empty':assemblingClass.leftassembclass == true && stationItem.isANSIleft == true,'up1':assemblingClass.leftup1class==true&& stationItem.isANSIleft == true }">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="arrow-down " style="position: absolute; left: 812px; top: 330px;" [ngClass]="{'empty':assemblingClass.leftassembclass == true && stationItem.isANSIleft == true,'up1':assemblingClass.leftup1class==true&& stationItem.isANSIleft == true }">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="keycaps2 content  material ansic" [ngStyle]="{'z-index':stationItem.isANSIright == true ? 100 : 1}" [ngClass]="ansidownstyle">
+                <li class=" first-line esc ">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  esc"> </li>
+                <li class="esc"> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin "></li>
+
+                <li class="enter ">
+                    <div style="position: absolute; left: 10px; top: 171px;opacity:0">
+                        <span>0</span>
+                        <span>中/英</span>
+                    </div>
+
+                </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin enter ">
+                    <div style="position: absolute; left: 827px; top: 171px;opacity:0">
+                        <span>2</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="shift ">
+                    <div style="position: absolute; left: 10px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  shift">
+                    <div style="position: absolute; left: 795px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="command"> </li>
+                <li class="space ">
+                    <div  style="position: absolute; left: 282px; top: 299px;" [ngClass]="{'empty':assemblingClass.rightassembclass == true && stationItem.isANSIright == true ,'up1':assemblingClass.rightup1class==true&& stationItem.isANSIright == true}">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+                </li>
+                <li class="command"> </li>
+                <li> </li>
+                <!--方向键-->
+                <li> </li>
+                <ol class="arrow ">
+                    <li>
+                        <div class="arrow-up " style="position: absolute; left: 812px; top: 299px;" [ngClass]="{'empty':assemblingClass.rightassembclass == true && stationItem.isANSIright == true,'up1':assemblingClass.rightup1class==true&& stationItem.isANSIright == true }">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="arrow-down " style="position: absolute; left: 812px; top: 330px;" [ngClass]="{'empty':assemblingClass.rightassembclass == true && stationItem.isANSIright == true ,'up1':assemblingClass.rightup1class==true&& stationItem.isANSIright == true}">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="keycaps2 content  material iso"  [ngStyle]="{'z-index':stationItem.isISOleft == true ? 100 : 1 }"  [ngClass]="isoleftdownstyle">
+                <li class="first-line esc">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin esc"> </li>
+
+                <li class="esc"> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return">
+                    <div style="position: absolute; left: 876px; top: 107px; opacity:0">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div style="position: absolute; left: 10px; top: 171px;opacity:0">
+                        <span>0</span>
+                        <span>caps lock</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift1">
+                    <div style="position: absolute; left: 10px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift2">
+                    <div style="position: absolute; left: 797px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="command"></li>
+                <li class="space" >
+                    <div  style="position: absolute; left: 282px; top: 299px;" [ngClass]="{'empty':assemblingClass.leftassembclass == true && stationItem.isISOleft == true,'up1':assemblingClass.leftup1class==true&& stationItem.isISOleft == true}">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command"> </li>
+                <li></li>
+
+                <!--方向键-->
+                <li></li>
+                <ol class="arrow">
+                    <li class="arrow-up">
+                        <div style="position: absolute; left: 812px; top: 299px;" [ngClass]="{'empty':assemblingClass.leftassembclass == true && stationItem.isISOleft == true,'up1':assemblingClass.leftup1class==true&& stationItem.isISOleft == true}">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down">
+                        <div style="position: absolute; left: 812px; top: 330px;"  [ngClass]="{'empty':assemblingClass.leftassembclass == true && stationItem.isISOleft == true,'up1':assemblingClass.leftup1class==true&& stationItem.isISOleft == true}">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="keycaps2 content  material iso"  [ngStyle]="{'z-index':stationItem.isISOright == true ? 100 : 1}" [ngClass]="isodownstyle">
+                <li class=" first-line esc">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin esc"> </li>
+
+                <li class="esc"> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return">
+                    <div style="position: absolute; left: 876px; top: 107px;opacity:0">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div style="position: absolute; left: 10px; top: 171px;opacity:0">
+                        <span>0</span>
+                        <span>caps lock</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift1">
+                    <div style="position: absolute; left: 10px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift2">
+                    <div style="position: absolute; left: 797px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="command"></li>
+                <li class="space">
+                    <div  style="position: absolute; left: 282px; top: 299px;" [ngClass]="{'empty':assemblingClass.rightassembclass == true && stationItem.isISOright == true,'up1':assemblingClass.rightup1class==true&& stationItem.isISOright == true}">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command"> </li>
+                <li></li>
+
+                <!--方向键-->
+                <li></li>
+                <ol class="arrow">
+                    <li class="arrow-up">
+                        <div style="position: absolute; left: 812px; top: 299px;" [ngClass]="{'empty':assemblingClass.rightassembclass == true && stationItem.isISOright == true,'up1':assemblingClass.rightup1class==true&& stationItem.isISOright == true}">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down">
+                        <div style="position: absolute; left: 812px; top: 330px;" [ngClass]="{'empty':assemblingClass.rightassembclass == true && stationItem.isISOright == true,'up1':assemblingClass.rightup1class==true&& stationItem.isISOright == true}">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="keycaps2 content  material jis" [ngStyle]="{'z-index':stationItem.isJISleft == true ? 100 : 1 }" [ngClass]="jisleftdownstyle" >
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class="clear-margin first-line esc"> </li>
+
+
+                <li class="esc"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin "></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return">
+                    <div style="position: absolute; left: 842px; top: 107px;opacity:0">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div style="position: absolute; left: 10px; top: 171px;opacity:0">
+                        <span>0</span>
+                        <span>control</span>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift">
+                    <div style="position: absolute; left: 10px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift">
+                    <div style="position: absolute; left: 827px; top: 235px;opacity:0">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li class="command"> </li>
+                <li class="command"> </li>
+                <li class="space" >
+                    <div  style="position: absolute; left: 298px; top: 299px;" [ngClass]="{'empty':assemblingClass.leftassembclass == true && stationItem.isJISleft == true,'up1':assemblingClass.leftup1class==true&& stationItem.isJISleft == true}">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command">  </li>
+                <li class="command"></li>
+                <li>   </li>
+                <!--方向键-->
+
+
+                <li>  </li>
+                <ol class="arrow">
+                    <li class="arrow-up">
+                        <div style="position: absolute; left: 812px; top: 299px;" [ngClass]="{'empty':assemblingClass.leftassembclass == true && stationItem.isJISleft == true,'up1':assemblingClass.leftup1class==true&& stationItem.isJISleft == true}">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down">
+                        <div style="position: absolute; left: 812px; top: 330px;" [ngClass]="{'empty':assemblingClass.leftassembclass == true && stationItem.isJISleft == true,'up1':assemblingClass.leftup1class==true&& stationItem.isJISleft == true}">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+                <li class="clear-margin"></li>
+            </ul>
+            <ul class="keycaps2 content  material jis" [ngStyle]="{'z-index':stationItem.isJISright == true ? 100 : 1 }" [ngClass]="jisdownstyle">
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class="clear-margin first-line esc"> </li>
+
+
+                <li class="esc"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin "></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return">
+                    <div style="position: absolute; left: 842px; top: 107px;opacity:0;">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>control</span>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift">
+                    <div style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift">
+                    <div style="position: absolute; left: 827px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li class="command"> </li>
+                <li class="command"> </li>
+                <li class="space">
+                    <div  style="position: absolute; left: 298px; top: 299px;" [ngClass]="{'empty':assemblingClass.rightassembclass == true && stationItem.isJISright == true,'up1':assemblingClass.rightup1class==true&& stationItem.isJISright == true}">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command">  </li>
+                <li class="command"></li>
+                <li>   </li>
+                <!--方向键-->
+
+
+                <li>  </li>
+                <ol class="arrow">
+                    <li class="arrow-up">
+                        <div style="position: absolute; left: 812px; top: 299px;" [ngClass]="{'empty':assemblingClass.rightassembclass == true && stationItem.isJISright == true,'up1':assemblingClass.rightup1class==true&& stationItem.isJISright == true}">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down">
+                        <div style="position: absolute; left: 812px; top: 330px;" [ngClass]="{'empty':assemblingClass.rightassembclass == true && stationItem.isJISright == true,'up1':assemblingClass.rightup1class==true&& stationItem.isJISright == true}">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+                <li class="clear-margin"></li>
+            </ul>
+            <ul class="s1 content  installation ansic ">
+                <li class=" first-line esc ">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  esc"> </li>
+                <li class="esc"> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin "></li>
+
+                <li class="enter "  >
+                    <div   style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>中/英</span>
+                    </div>
+
+                </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin enter "  >
+                    <div  style="position: absolute; left: 827px; top: 171px;opacity:0;">
+                        <span>2</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="shift ">
+                    <div   style="position: absolute; left: 10px; top: 235px; opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  shift">
+                    <div  style="position: absolute; left: 795px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="command"> </li>
+                <li class="space " style='opacity:1;'>
+                    <div   style="position: absolute; left: 282px; top: 299px;opacity:0;">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+                </li>
+                <li class="command"> </li>
+                <li> </li>
+                <!--方向键-->
+                <li> </li>
+                <ol class="arrow ">
+                    <li style="opacity:1">
+                        <div class="arrow-up  " style="position: absolute; left: 812px; top: 299px;opacity:0;">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                    <li style="opacity:1">
+                        <div class="arrow-down  " style="position: absolute; left: 812px; top: 330px;opacity:0;">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="s1 content  installation iso ">
+                <li class=" first-line esc">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin esc"> </li>
+
+                <li class="esc"> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return"  >
+                    <div  style="position: absolute; left: 876px; top: 107px;opacity:0;">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter" >
+                    <div   style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>caps lock</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift1">
+                    <div   style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift2">
+                    <div  style="position: absolute; left: 797px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="command"></li>
+                <li class="space" style='opacity:1;'>
+                    <div   style="position: absolute; left: 282px; top: 299px;opacity:0;">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command"> </li>
+                <li></li>
+
+                <!--方向键-->
+                <li></li>
+                <ol class="arrow">
+                    <li class="arrow-up" style="opacity:1">
+                        <div   style="position: absolute; left: 812px; top: 299px;opacity:0;">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down" style="opacity:1">
+                        <div   style="position: absolute; left: 812px; top: 330px;opacity:0;">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="s1 content  installation jis ">
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class="clear-margin first-line esc"> </li>
+
+
+                <li class="esc"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin "></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return"  >
+                    <div  style="position: absolute; left: 842px; top: 107px;opacity:0;">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div   style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>control</span>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift">
+                    <div  style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift">
+                    <div  style="position: absolute; left: 827px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li class="command"> </li>
+                <li class="command"> </li>
+                <li class="space" style='opacity:1;'>
+                    <div  style="position: absolute; left: 298px; top: 299px;opacity:0; ">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command">  </li>
+                <li class="command"></li>
+                <li>   </li>
+                <!--方向键-->
+
+
+                <li>  </li>
+                <ol class="arrow">
+                    <li class="arrow-up" style="opacity:1">
+                        <div  style="position: absolute; left: 812px; top: 299px;opacity:0;">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down" style="opacity:1">
+                        <div   style="position: absolute; left: 812px; top: 330px;opacity:0;">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+                <li class="clear-margin"></li>
+            </ul>
+
+            <!--拍料(工位二)-->
+       
+            <ul class="s2 content  installation ansic">
+                <li class=" first-line esc ">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  esc"> </li>
+                <li class="esc"> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin "></li>
+
+                <li class="enter "  >
+                    <div   style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>中/英</span>
+                    </div>
+
+                </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin enter "  >
+                    <div  style="position: absolute; left: 827px; top: 171px;opacity:0;">
+                        <span>2</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="shift ">
+                    <div   style="position: absolute; left: 10px; top: 235px; opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="clear-margin  shift">
+                    <div  style="position: absolute; left: 795px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li class="command"> </li>
+                <li class="space " style='opacity:1;'>
+                    <div   style="position: absolute; left: 282px; top: 299px;opacity:0;">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+                </li>
+                <li class="command"> </li>
+                <li> </li>
+                <!--方向键-->
+                <li> </li>
+                <ol class="arrow ">
+                    <li style="opacity:1">
+                        <div class="arrow-up  " style="position: absolute; left: 812px; top: 299px;opacity:0;">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                    <li style="opacity:1">
+                        <div class="arrow-down  " style="position: absolute; left: 812px; top: 330px;opacity:0;">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="s2 content  installation iso">
+                <li class=" first-line esc">  </li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="first-line"></li>
+                <li class="clear-margin first-line "> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin esc"> </li>
+
+                <li class="esc"> </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return"  >
+                    <div  style="position: absolute; left: 876px; top: 107px;opacity:0;">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter" >
+                    <div   style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>caps lock</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift1">
+                    <div   style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift2">
+                    <div  style="position: absolute; left: 797px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="command"></li>
+                <li class="space" style='opacity:1;'>
+                    <div   style="position: absolute; left: 282px; top: 299px;opacity:0;">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command"> </li>
+                <li></li>
+
+                <!--方向键-->
+                <li></li>
+                <ol class="arrow">
+                    <li class="arrow-up" style="opacity:1">
+                        <div   style="position: absolute; left: 812px; top: 299px;opacity:0;">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down" style="opacity:1">
+                        <div   style="position: absolute; left: 812px; top: 330px;opacity:0;">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+
+                <li class="clear-margin"> </li>
+            </ul>
+            <ul class="s2 content  installation jis">
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class=" first-line"></li>
+                <li class="clear-margin first-line esc"> </li>
+
+
+                <li class="esc"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin "></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin return"  >
+                    <div  style="position: absolute; left: 842px; top: 107px;opacity:0;">
+                        <span>0</span>
+                        <span>return</span>
+                    </div>
+                </li>
+
+                <li class="enter">
+                    <div   style="position: absolute; left: 10px; top: 171px;opacity:0;">
+                        <span>0</span>
+                        <span>control</span>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li class="shift">
+                    <div  style="position: absolute; left: 10px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="clear-margin shift">
+                    <div  style="position: absolute; left: 827px; top: 235px;opacity:0;">
+                        <span>0</span>
+                        <span>shift</span>
+                    </div>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li class="command"> </li>
+                <li class="command"> </li>
+                <li class="space" style='opacity:1;'>
+                    <div  style="position: absolute; left: 298px; top: 299px;opacity:0; ">
+                        <span>0</span>
+                        <span>space</span>
+                    </div>
+
+                </li>
+                <li class="command">  </li>
+                <li class="command"></li>
+                <li>   </li>
+                <!--方向键-->
+
+
+                <li>  </li>
+                <ol class="arrow">
+                    <li class="arrow-up" style="opacity:1">
+                        <div  style="position: absolute; left: 812px; top: 299px;opacity:0;">
+                            <span class="icon icon-up"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                    <li class="arrow-down" style="opacity:1">
+                        <div   style="position: absolute; left: 812px; top: 330px;opacity:0;">
+                            <span class="icon icon-down"></span>
+                            <span>0</span>
+                        </div>
+                    </li>
+                </ol>
+                <li class="clear-margin"></li>
+            </ul>
+            <div class="bg-images">
+                <div class='scanning'>
+                    <div class="scanning-bar" [ngClass]="photoclass"></div>
+                </div>
+            </div>
+        </div>

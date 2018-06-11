@@ -1,0 +1,34 @@
+<div class="right">
+    <div class="sn">
+        <ul class="sn-list">
+            <li>
+                A_pcbSN
+                <input type="text" [(ngModel)]="assembling.APCBSN" >
+            
+            </li>
+            <li>
+                A_traySN
+                <input type="text" [(ngModel)]="assembling.ATraySN">
+            </li>
+            <li>
+                B_pcbSN
+                <input type="text" [(ngModel)]="assembling.BPCBSN">
+            </li>
+            <li>
+                B_traySN
+                <input type="text" [(ngModel)]="assembling.BTraySN">
+            
+            </li>
+        </ul>
+        <div class="con-btns">
+            <span (click)="pcbSearch()"> PCB查询</span>
+            <span (click)="trayUpload()">Tray盘上传</span>
+            <span (click)="pcbUpload()"> PCB上传</span>
+        </div>
+    </div>
+    <div class="daily">
+        <ul id="js_logDiv">
+            <li *ngFor="let log of logs;let i=index;" [style.color]="log.style"><span style="color:#51b6ff">{{i}}:</span>{{log.time|date:'yyyy-MM-dd HH:mm:ss'}},{{log.loginfo}}</li>
+        </ul>
+    </div>
+</div>

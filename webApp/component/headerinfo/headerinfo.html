@@ -1,0 +1,32 @@
+<header class="header">
+    <div class="company">
+        <div class="logo"></div>
+        <div class="name"> <span>{{configinfos.StationVer}}</span></div>
+    </div>
+    <div class="main-con">
+        <div class="mataintime" >
+            <input type="button" [value]="repairtime" (click)="repair()" [ngClass]="{'active':isrepaire===true}"/><br/>
+            <input type="button" [value]="protecttime" (click)="matain()" [ngClass]="{'active':ismatain===true}"/>
+        </div>
+        <div class="buttons">
+            <span class="icon icon-start" title="启动"  [ngClass]="{'iostatusclass':clickclass[0]===true}" (click)="startUp()"></span>
+            <span class="icon icon-refash" title="复位" [ngClass]="{'iostatusclass':clickclass[1]===true}"  (click)="reset()"></span>
+            <span class="icon icon-hold-on" title="暂停" [ngClass]="{'iostatusclass':clickclass[2]===true}" (click)="suspend()"></span>
+            <span class="icon icon-stop3"  title="停止" [ngClass]="{'iostatusclass':clickclass[3]===true}" (click)="stop()"></span>
+            <span class=" io " title="IO面板" [ngClass]="{'iostatusclass':clickclass[4]===true}"  (click)="showIo()">I/O</span>
+            <span class="icon icon-point" title="点位面板"  [ngClass]="{'iostatusclass':clickclass[5]===true}" (click)="openpointPanel()"></span>
+            <span class="icon icon-setting" title="配置面板" [ngClass]="{'iostatusclass':clickclass[6]===true}"  (click)="showConfig()"></span>
+            <span class="icon icon-panel " title="日志面板" [ngClass]="{'iostatusclass':clickclass[7]===true}"  (click)="openLogPanel()"></span>
+            <span class="icon icon-quan" title="全屏" [ngClass]="{'iostatusclass':clickclass[8]===true}"  (click)="fullScreen()"></span>
+            <span class="icon icon-users" title="登录"  [ngClass]="{'iostatusclass':clickclass[9]===true}" (click)="loginIn()">
+                <ul class="log-out" [hidden]="isShowLoginOut">
+                    <li (click)="login()">{{loginstatus}}</li>
+                    <li  *ngIf="userinformation.role ==='管理员'"  (click)="changpwd()">修改密码</li>
+                </ul>
+            </span>
+        </div>
+        <p class="status">
+            {{warn.loginfo}}
+        </p>
+    </div>
+</header>

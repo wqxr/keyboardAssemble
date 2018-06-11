@@ -1,0 +1,18 @@
+<article>
+    <headinfo [status]="status" [userinformation]="loginStatus" [headerinfo]="headerinfo" (configisShow)="showconfig($event)" (outlogin)="outlogin($event)" (ioisShow)="showIo($event)" [configinfos]="configinfo" (isUseShowfun)="showfunlog($event)"
+        (ispointPanelShow)="showpointpanel($event)" [logs]="logs"  [warn]="warn" [configinfos]="configinfo" (isloginPanelShow)="loginshow($event)"
+        [userinformation]="loginStatus" (ischangepwdPanelShow)="changepwd($event)">
+    </headinfo>
+    <section class="section">
+        <pcbcount [status]="status" [headerinfo]="headerinfo" (changeStatus)="changeStatus($event)"></pcbcount>
+        <keycaps [warn]="warn" [assembling]="assembling" [configinfos]="configinfo" [userinformation]="loginStatus" [headerinfo]="headerinfo" [status]="statusops"></keycaps>
+        <keycapsdetail [status]="status" [assembling]="productdetail" [logs]="logs"></keycapsdetail>
+    </section>
+</article>
+<div class="mask" [hidden]="maskshow"></div>
+<io-panel [hidden]="configShow" class="dialog"  (configisShow)="showconfig($event)" (configinfo)="showconfiginfo($event)"></io-panel>
+<config-panel [hidden]="isShow" class="dialog" (ioisShow)="showIo($event)"></config-panel>
+<log-panel class="dialog" [hidden]="logshow" (logpanelisShow)="showlogpanel($event)"></log-panel>
+<point-panel class="dialog" [hidden]="pointshow" (ispointPanelShow)="showpointpanel($event)"></point-panel>
+<login-panel (loginResult)="getuserinfo($event)"></login-panel>
+<change-password [userinformation]="loginStatus" (closepwd)="closepwd($event)"></change-password>

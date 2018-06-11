@@ -1,0 +1,30 @@
+<table class="table" style="margin-bottom:1rem;width: 80%;" *ngFor="let item of iOList;let i=index;"  >
+        <caption style="font-size:18px;" >
+            {{item.name}}
+        </caption>
+        <thead>
+            <tr>
+                <th>点位</th>
+                <th *ngIf="i=== 0">X</th>
+                
+                <th *ngIf="i=== 1">z</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let optical of item.pointinfo">
+                <td>{{optical.name}}</td>
+                <td><input type="text" class="inputstyle" [(ngModel)]="optical.xpoint" [readonly]="machinestatus===8 || userrole==='操作员'"/></td>
+                <!-- <td><input type="text" class="inputstyle"/></td>
+                <td><input type="text" class="inputstyle"/></td>
+                <td><input type="text" class="inputstyle"/></td>
+                <td><input type="text" class="inputstyle"/></td>
+                <td><input type="text" class="inputstyle"/></td> -->
+            </tr>
+    
+        </tbody>
+    </table>
+    <div><input type="button" value="保存" (click)="savePoint()" class="btnclass"/></div>
+    
+    
+          

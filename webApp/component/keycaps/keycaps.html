@@ -1,0 +1,128 @@
+<div class="center">
+    <ul class="pattern">
+        <li>
+            <label (click)="changedata('JisProduct')" [ngClass]="{'active':config.JisProduct}">
+                <span  [ngClass]="{'icon':true,'active':config.JisProduct}"></span>
+                JIS产品
+            </label>
+            <label  (click)="changedata('enableStationA')" [ngClass]="{'active':config.enableStationA}">
+                <span [ngClass]="{'icon':true,'active':config.enableStationA}"></span> 
+                启用A工站
+            </label>
+            <label (click)="changedata('enableStationB')" [ngClass]="{'active':config.enableStationB}">
+                <span [ngClass]="{'icon':true,'active':config.enableStationB}"></span>
+                启用B工站
+            </label>
+            <label  (click)="changedata('emptyrun')" [ngClass]="{'active':config.emptyrun}">
+                <span [ngClass]="{'icon':true,'active':config.emptyrun}"></span>
+                空跑
+            </label>
+            <!-- <label (click)="changedata('enableMachineCon')">
+                <span [ngClass]="{'icon':true,'active':config.enableMachineCon}" ></span>
+                连接下站
+            </label> -->
+            <label (click)="changedata('enableMachineCon')" [ngClass]="{'active':config.enableMachineCon}" *ngIf="configinfos.MachineNo==='002'||configinfos.MachineNo==='001'">
+                <span [ngClass]="{'icon':true,'active':config.enableMachineCon}" ></span>
+                PCB轨道
+            </label>
+            <label (click)="changedata('tray_flowline')" [ngClass]="{'active':config.tray_flowline}" *ngIf="configinfos.MachineNo==='001'">
+                <span [ngClass]="{'icon':true,'active':config.tray_flowline}" ></span>
+                TRAY盘轨道
+            </label>
+        </li>
+        <li>
+            <label  (click)="changedata('space')" [ngClass]="{'active':config.space}">
+                <span  [ngClass]="{'icon':true,'active':config.space}"></span>
+                空格键扣合
+            </label>
+            <label (click)="changedata('up')" [ngClass]="{'active':config.up}">
+                <span  [ngClass]="{'icon':true,'active':config.up}" ></span>
+                上键扣合
+            </label>
+            <label (click)="changedata('down')" [ngClass]="{'active':config.down}">
+                <span  [ngClass]="{'icon':true,'active':config.down}" ></span>
+                下键扣合
+            </label>
+            <label  (click)="changedata('enter')" [ngClass]="{'active':config.enter}">
+                <span  [ngClass]="{'icon':true,'active':config.enter}"></span>
+                 enter键扣合
+            </label>
+            <label  (click)="changedata('caps')" [ngClass]="{'active':config.caps}">
+                <span  [ngClass]="{'icon':true,'active':config.caps}"></span>
+                 caps键扣合
+            </label>
+        </li>
+        <li>
+            <label  (click)="changedata('scanCode')" [ngClass]="{'active':config.scanCode}">
+                <span [ngClass]="{'icon':true,'active':config.scanCode}">
+
+                </span>
+                扫码  
+            </label>
+            <label (click)="changedata('showflowin')" [ngClass]="{'active':config.showflowin}">
+                <span [ngClass]="{'icon':true,'active':config.showflowin}" ></span>
+                shopflow上传
+            </label>
+            <p> </p>
+            <label (click)="changedata('CCD')" [ngClass]="{'active':config.CCD}">
+                <span [ngClass]="{'icon':true,'active':config.CCD}" ></span>
+                启用CCD
+            </label>
+            <label  (click)="changedata('ccdres')" [ngClass]="{'active':config.ccdres}">
+                <span [ngClass]="{'icon':true,'active':config.ccdres}"></span>
+                CCD结果
+            </label>
+        </li>
+        <li>
+            <label  (click)="setTimes(0)" [ngClass]="{'active':checkTimesClass[0]}">
+                <span [ngClass]="{'icon':true,'active':checkTimesClass[0]}"></span>
+                1次
+            </label>
+            <label  (click)="setTimes(1)" [ngClass]="{'active':checkTimesClass[1]}">
+                <span [ngClass]="{'icon':true,'active':checkTimesClass[1]}"></span>
+                 2次
+            </label>
+            <label (click)="setTimes(2)" [ngClass]="{'active':checkTimesClass[2]}">
+                <span [ngClass]="{'icon':true,'active':checkTimesClass[2]}"></span>
+                3次
+            </label>
+        </li>
+        <li>
+            <span class="w-btn" [ngClass]="{'active':classstyle[0]}" (click)="Aclear()">A料仓清零</span>
+            <span class="w-btn" [ngClass]="{'active':classstyle[1]}" (click)="Bclear()">B料仓清零</span>
+            <span class="w-btn" [ngClass]="{'active':classstyle[2]}" (click)="Aoutdepot()">A料仓出库</span>
+            <span class="w-btn" [ngClass]="{'active':classstyle[3]}" (click)="Boutdepot()">B料仓出库</span>
+            <span class="w-btn" [ngClass]="{'active':classstyle[4]}" (click)="PcbOut('A')">A-PCB出料</span>
+            <span class="w-btn" [ngClass]="{'active':classstyle[5]}" (click)="PcbOut('B')">B-PCB出料</span>
+        </li>
+        <!-- <div  [ngClass]="{'configmask':userinformation.role == '操作员'}"></div> -->
+    </ul>
+    <div class="record">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>PCBSN</th>
+                    <th>TraySN</th>
+                    <th>type</th>
+                    <th>jobnumber</th>
+                    <th>station</th>
+                    <th>设备ID</th>
+                    <th>时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of assembling.detailproduct;">
+                    <td>{{item.index}}</td>
+                    <td>{{item.PCBSN}}</td>
+                    <td>{{item.TraySN}}</td>
+                    <td>{{item.type}}</td>
+                    <td>{{item.jobnumber}}</td>
+                    <td>{{item.codeStation}}</td>
+                    <td>WIZS_{{configinfos.LineNo}}_{{configinfos.MachineNo}}_HA2</td>
+                    <td>{{item.time}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

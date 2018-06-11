@@ -1,0 +1,240 @@
+ @import 'reset.css';
+@import 'iconfonts.css'; 
+/* 
+.divclass1{
+    float:left;
+}
+.divclass2{
+    float:right;
+}
+article .section .left .view-panel  {
+    position: relative;
+    display: flex;
+    padding-left: 2rem;
+    cursor: pointer;
+  }
+  article .section .left .view-panel  .wqclass {
+    position: relative;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-right: 50%;
+    background-color: #008605;
+    border-radius: 50%;
+    margin-right: 1rem;
+  } */
+  .initstatus {
+    position: relative;
+    margin-top: 16px;
+    height: 90px;
+    width: 100%;
+    line-height: 90px;
+    text-align: center;
+    color: red;
+    font-size: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    background-color: #efefef;
+  }
+   .workstatus {
+    position: relative;
+    margin-top: 16px;
+    height: 90px;
+    width: 100%;
+    line-height: 90px;
+    text-align: center;
+    color: #178D33;
+    font-size: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    background-color: #efefef;
+  }
+   .stopstatus {
+    position: relative;
+    margin-top: 16px;
+    height: 90px;
+    width: 100%;
+    line-height: 90px;
+    text-align: center;
+    color: rgb(255, 217, 2);
+    font-size: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    background-color: #efefef;
+  }
+  .finishstatus {
+    position: relative;
+    margin-top: 16px;
+    height: 90px;
+    width: 100%;
+    line-height: 90px;
+    text-align: center;
+    color: rgb(2, 69, 255);
+    font-size: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    background-color: #efefef;
+  }
+  .iostatusclass{
+    background-color: greenyellow !important;
+  }
+  .tabs{
+    position: relative;
+    display: flex;
+    height: 2rem;
+  }
+  .tabs label{
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    background-color: #b3f9b0;
+    border-top: 1px solid #116dfc;
+    border-right: 1px solid #116dfc;
+    border-bottom: 1px solid #116dfc;
+  }
+  .tabs .tab-active {
+    color: #fff;
+    background-color: #136ffe;
+}
+.h3class{
+  height: 2rem;
+  /* line-height: 1rem; */
+  font-size: 1.5rem;
+  color: #0091fa;
+  margin-top:10px;
+}
+.mataintime{
+  height:8rem;
+  width:80px;
+  float:left;
+  margin-left:20px;
+}
+.mataintime input{
+  height: 2rem;
+  margin-top: 5px;
+  width: 70px;
+  background-color: #51b6ff;
+  color: white;
+}
+.inputstyle{
+  border: 1px solid #f3eeee;
+  width: 100%;
+  height: 31px;
+}
+.floatclass{
+  float:right !important;
+  margin-right:20px !important;
+}
+.clearclass{
+  clear:both;
+}
+.btnclass{
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.27);
+  cursor: pointer;
+  border-color: #0091fa;
+  color: #ffffff;
+  background-color: #0091fa;
+  width:100px;
+  margin-left:500px;
+  margin-top:40px;
+}
+.dialog .dia-con {
+  position: relative;
+}
+.dialog .dia-con .close {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+.dialog .dia-con .close:hover {
+  transform: rotate(180deg);
+}
+.dialog .dia-con header h1 {
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+.dialog .dia-con  {
+  position: relative;
+ /* // overflow: hidden; */
+}
+.dialog .dia-con  .from {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.dialog .dia-con  .from label {
+  position: relative;
+  width: 50%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.dialog .dia-con  .from label span {
+  line-height: 2.5rem;
+  width: 120px;
+}
+.dialog .dia-con  .from label input {
+  display: block;
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.27);
+  border-radius: 0.25rem;
+  padding: 0 1rem;
+  width: 280px;
+}
+.dia-con  p{
+  color:#0091fa;
+  font-size:20px;
+}
+.dialog .dia-con  .from label input:focus {
+  border-color: #0091fa;
+}
+
+ /* .dia-con .from {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.dia-con  p{
+  color:#0091fa;
+  font-size:20px;
+}
+ .dia-con  .from label {
+  position: relative;
+  width: 40%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.dia-con  .from label span {
+  line-height: 2.5rem;
+  width: 120px;
+}
+ .dia-con  .from label input {
+  display: block;
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.27);
+  border-radius: 0.25rem;
+  padding: 0 1rem;
+  width: 280px;
+}
+ .dia-con  .from label input:focus {
+  border-color: #0091fa;
+} */
+.labelclass{
+  width:60%!important;
+}
+.labelclass span:nth-of-type(2){
+  margin-top: -5px!important;
+  color:red;
+  width:150px!important;
+}

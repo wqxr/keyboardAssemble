@@ -1,0 +1,653 @@
+@import 'reset.css';
+@import 'iconfonts.css';
+@white: #fff;
+@g27: rgba(0, 0, 0, 0.27);
+@g53: rgba(0, 0, 0, 0.53);
+@g87: rgba(0, 0, 0, 0.87);
+@bg: #efefef;
+@blue: #0091fa;
+article {
+    position: relative;
+    width: 1366px;
+    height: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+    .header {
+        position: relative;
+        height: 178px;
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 1px solid @g27;
+        display: flex;
+        .company {
+            position: relative;
+            height: 100%;
+            width: 266px;
+            border-right: 1px solid @g27;
+            .logo {
+                position: relative;
+                width: 100%;
+                height: 136px;
+                background-image: url(../images/logo.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-bottom: 1px solid @g27;
+            }
+            .name {
+                height: 42px;
+                line-height: 42px;
+                font-size: 24px;
+                font-weight: 600;
+                background-color: @bg;
+                width: 100%;
+                padding-left: 1rem;
+                span {
+                    font-size: 16px;
+                    font-weight: 100;
+                }
+            }
+        }
+        .main-con {
+            position: relative;
+            flex: 1;
+            height: 100%;
+            overflow: hidden;
+            .buttons {
+                position: relative;
+                height: 136px;
+                border-bottom: 1px solid @g27;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 1rem;
+                span {
+                    font-size: 64px;
+                    padding: 1rem;
+                    cursor: pointer;
+                    position: relative;
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }
+                    &:nth-of-type(1) {
+                        color: @blue;
+                    }
+                    &:nth-of-type(2) {
+                        color: @blue;
+                    }
+                    &:nth-of-type(3) {
+                        color: @blue;
+                    }
+                    &:nth-of-type(4) {
+                        color: @blue;
+                    }
+                    &:nth-of-type(5) {
+                        color: @blue;
+                    }
+                    &:nth-of-type(6) {
+                        color: #008605;
+                    }
+                    &:nth-of-type(7) {
+                        color: #f8e115;
+                    }
+                    &:nth-of-type(8) {
+                        color: #ff021e;
+                    }
+                    &:nth-of-type(9) {
+                        color: #606975;
+                    }
+                    &:nth-of-type(10) {
+                        color: @blue;
+                        .log-out {
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            top: 100%;
+                            font-size: 14px;
+                            z-index: 10000;
+                            text-align: center;
+                            background-color: @white;
+                            box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+                            li {
+                                height: 2rem;
+                                line-height: 2rem;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: #0091fa;
+                                    color: @white;
+                                }
+                            }
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 50%;
+                                height: 1px;
+                                width: 100%;
+                                background-color: rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .status {
+            position: relative;
+            height: 42px;
+            line-height: 42px;
+            font-size: 24px;
+            padding: 0 1rem;
+            background-color: #fad9d2;
+            color: #ff021e;
+        }
+    }
+    .section {
+        position: relative;
+        width: 100%;
+        height: 590px;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        .left {
+            position: relative;
+            height: 100%;
+            width: 250px;
+            .status {
+                position: relative;
+                margin-top: 16px;
+                height: 104px;
+                width: 100%;
+                line-height: 104px;
+                text-align: center;
+                color: red;
+                font-size: 3rem;
+                border: 1px solid @g27;
+                background-color: @bg;
+            }
+            .view-panel {
+                position: relative;
+                height: 136px;
+                width: 100%;
+                margin-top: 1rem;
+                border: 1px solid @g27;
+                background-color: @bg;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    position: relative;
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    span {
+                        position: relative;
+                        display: block;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                  
+                        background-color: #008605;
+                        border-radius: 50%;
+                        margin-right: 0.5rem;
+                    }
+                    &.err span {
+                        background-color: #ff021e;
+                    }
+                    &:nth-of-type(2n-1) {
+                        padding-left: 1rem;
+                    }
+                }
+            }
+            .total {
+                position: relative;
+                height: 292px;
+                margin-top: 24px;
+                width: 100%;
+                border: 1px solid @g27;
+                background-color: @bg;
+                padding: 1rem 0.5rem;
+                ;
+                &:after {
+                    content: '统计数据';
+                    position: absolute;
+                    left: 1.5rem;
+                    height: 1rem;
+                    padding: 0 0.5rem;
+                    line-height: 1rem;
+                    top: -0.5rem;
+                    background-color: #f5f5f5;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0.5rem;
+                    top: 1rem;
+                    right: 0.5rem;
+                    bottom: 0.5rem;
+                    border: 1px solid @g27;
+                    background-color: @white;
+                }
+                .all {
+                    position: relative;
+                    height: 160px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p {
+                        padding: 0.5rem 1rem;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+                .num-list {
+                    position: relative;
+                    height: 224px;
+                    li {
+                        height: 2rem;
+                        line-height: 2rem;
+                        padding: 0 1rem;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+                .reset {
+                    position: absolute;
+                    padding: 0 0.5rem;
+                    color: @white;
+                    z-index: 100;
+                    background-color: #51b6ff;
+                    height: 2rem;
+                    line-height: 2rem;
+                    border-radius: 0.25rem;
+                    bottom: 1rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    cursor: pointer;
+                }
+            }
+        }
+        .center {
+            position: relative;
+            width: 720px;
+            height: 100%;
+            overflow: hidden; // .mes {
+            //     position: relative;
+            //     margin-top: 16px;
+            //     width: 100%;
+            //     height: 104px;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     font-size: 1rem;
+            //     border: 1px solid @g27;
+            //     background-color: @bg;
+            //     label {
+            //         position: relative;
+            //         padding: 0 1rem;
+            //         display: flex;
+            //         span {
+            //             position: relative;
+            //             display: block;
+            //             width: 1.5rem;
+            //             height: 1.5rem;
+            //             border-right: 50%;
+            //             background-color: #008605;
+            //             border-radius: 50%;
+            //             margin-right: 1rem;
+            //             &.err {
+            //                 background-color: #ff021e;
+            //             }
+            //         }
+            //     }
+            // }
+            .pattern {
+                position: relative;
+                display: flex;
+                width: 100%;
+                height: 242px;
+                margin-top: 1rem;
+                border-left: 1px solid @g27;
+                border-right: 1px solid @g27;
+                border-bottom: 1px solid @g27;
+                background-color: @bg;
+                padding: 1.5rem 1rem 1rem 1rem;
+                justify-content: space-between;
+                li {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    border: 1px solid @g27;
+                    min-width: 110px;
+                    &>span {
+                        position: relative;
+                    }
+                    label {
+                        position: relative;
+                        padding: 0.5rem 1rem;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        span {
+                            display: block;
+                            width: 1rem;
+                            height: 1rem;
+                            margin-right: 0.5rem;
+                            border: 1px solid @g27;
+                        }
+                    }
+                    p {
+                        position: relative;
+                        text-align: center;
+                        height: 2rem;
+                        line-height: 2rem;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            height: 1px;
+                            left: 0.5rem;
+                            right: 0.5rem;
+                            background-color: @g27;
+                            top: 50%;
+                        }
+                        &:before {
+                            content: 'CCD工作模式';
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            height: 2rem;
+                            line-height: 2rem;
+                            padding: 0 0.25rem;
+                            text-align: center;
+                            background-color: @white;
+                            z-index: 100;
+                            white-space: nowrap;
+                        }
+                    }
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: 0.5rem;
+                        top: 1rem;
+                        right: 0.5rem;
+                        bottom: 0.5rem;
+                        background-color: @white;
+                        border: 1px solid @g27;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        background-color: @bg;
+                        padding: 0 0.5rem;
+                        height: 1rem;
+                        line-height: 1rem;
+                        left: 0.5rem;
+                        top: -0.5rem;
+                    }
+                    &:nth-of-type(1) {
+                        &:after {
+                            content: '设备工作模式';
+                        }
+                        label span.active {
+                            border-color: #008605;
+                            &:after {
+                                content: '\e927';
+                                font-family: 'icomoon' !important;
+                                speak: none;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-variant: normal;
+                                text-transform: none;
+                                line-height: 1;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                color: #008605;
+                            }
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        &:after {
+                            content: '扣合按键';
+                        }
+                        label span.active {
+                            border-color: #008605;
+                            &:after {
+                                content: '\e927';
+                                font-family: 'icomoon' !important;
+                                speak: none;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-variant: normal;
+                                text-transform: none;
+                                line-height: 1;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                color: #008605;
+                            }
+                        }
+                    }
+                    &:nth-of-type(3) {
+                        &:after {
+                            content: '通讯模式';
+                        }
+                        label span.active {
+                            border-color: #008605;
+                            &:after {
+                                content: '\e927';
+                                font-family: 'icomoon' !important;
+                                speak: none;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-variant: normal;
+                                text-transform: none;
+                                line-height: 1;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                color: #008605;
+                            }
+                        }
+                    }
+                    &:nth-of-type(4) {
+                        &:after {
+                            content: '导正次数';
+                        }
+                        label {
+                            justify-content: center;
+                            span {
+                                border-radius: 50%;
+                                position: relative;
+                                &.active {
+                                    border-color: #008605;
+                                    &:after {
+                                        content: '';
+                                        position: absolute;
+                                        width: 0.5rem;
+                                        height: 0.5rem;
+                                        left: 50%;
+                                        top: 50%;
+                                        transform: translate3d(-50%, -50%, 0);
+                                        border-radius: 50%;
+                                        background-color: #008605;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:nth-of-type(5) {
+                        &:after {
+                            content: '料仓';
+                        }
+                        align-items: center;
+                        .w-btn {
+                            display: block;
+                            width: 72px;
+                            height: 2rem;
+                            line-height: 2rem;
+                            border-radius: 0.25rem;
+                            text-align: center;
+                            background-color: #bebebe;
+                            color: @white;
+                            cursor: pointer;
+                            &+.w-btn {
+                                margin-top: 1rem;
+                            }
+                            &.active {
+                                background-color: #51b6ff;
+                            }
+                        }
+                    }
+                }
+            }
+            .record {
+                position: relative;
+                width: 100%;
+                height: 316px;
+                margin-top: 1rem;
+                border: 1px solid @g27;
+                background-color: @bg;
+                padding: 1rem;
+                &:after {
+                    content: '生产记录';
+                    position: absolute;
+                    left: 0.5rem;
+                    height: 1rem;
+                    line-height: 1rem;
+                    padding: 0 0.5rem;
+                    top: -0.5rem;
+                    background-color: #f5f5f5;
+                }
+                .table {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    border-collapse: collapse;
+                    border: 1px solid @g27;
+                    text-align: center;
+                    thead {
+                        background-color: #e1e1e1;
+                        tr {
+                            height: 2rem;
+                        }
+                    }
+                    tbody {
+                        background-color: @white;
+                        tr {
+                            border-bottom: 1px solid @g27;
+                            height: 29px;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            position: relative;
+            height: 100%;
+            width: 332px;
+            overflow: hidden;
+            .sn {
+                position: relative;
+                margin-top: 1rem;
+                border: 1px solid @g27;
+                width: 100%;
+                height: 346px;
+                background-color: @bg;
+                &:after {
+                    content: '手动上传';
+                    position: absolute;
+                    height: 1rem;
+                    line-height: 1rem;
+                    left: 0.5rem;
+                    top: -0.5rem;
+                    padding: 0 0.5rem;
+                    background-color: #f5f5f5;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0.5rem;
+                    top: 1rem;
+                    right: 0.5rem;
+                    bottom: 0.5rem;
+                    background-color: @white;
+                    border: 1px solid @g27;
+                }
+                .sn-list {
+                    position: relative;
+                    height: 160px;
+                    margin-top: 1rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    li {
+                        height: 2rem;
+                        line-height: 2rem;
+                        input {
+                            margin-left: 0.5rem;
+                            border: 1px solid @g27;
+                            padding: 0 0.5rem;
+                        }
+                    }
+                }
+                .con-btns {
+                    position: relative;
+                    height: 136px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    span {
+                        height: 2rem;
+                        line-height: 2rem;
+                        display: block;
+                        width: 130px;
+                        background-color: #51b6ff;
+                        color: @white;
+                        text-align: center;
+                        border-radius: 0.25rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .daily {
+                position: relative;
+                width: 100%;
+                height: 212px;
+                margin-top: 1rem;
+                border: 1px solid rgba(0, 0, 0, 0.27);
+                background-color: #efefef;
+                display: flex;
+                padding: 1rem;
+                &:before {
+                    content: '操作日志';
+                    position: absolute;
+                    left: 0.5rem;
+                    height: 1rem;
+                    line-height: 1rem;
+                    padding: 0 0.5rem;
+                    top: -0.5rem;
+                    background-color: #f5f5f5;
+                }
+                ul {
+                    position: absolute;
+                    left: 0.5rem;
+                    top: 1rem;
+                    right: 0.5rem;
+                    bottom: 1rem;
+                    background-color: @white;
+                    border: 1px solid @g27;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    li {
+                        height: 2rem;
+                        line-height: 2rem;
+                        padding: 0 1rem;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

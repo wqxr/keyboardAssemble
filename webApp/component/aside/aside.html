@@ -1,0 +1,55 @@
+<div class="dia-con">
+      <span class="close" (click)="onclose()">X</span>
+      <header>
+            <h1>配置参数</h1>
+      </header>
+      <section>
+            
+            <p>上传参数</p>
+            <div class="from">
+         
+            <label>
+                  <span>IP</span>  <input id="src" type="text" name="" value="" placeholder="" [(ngModel)]="config.IP"/>
+            </label>
+            <label>
+                  <span>MAC_ADDR</span>  <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.MAC_ADDR"/>
+            </label>
+            <label>
+                  <span>LineNo</span>  <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.LineNo"/>
+            </label>
+            <label>
+                  <span>StationNo</span>    <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.StationNo"/>
+            </label>
+            <label>
+                  <span>MachineNo</span>    <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.MachineNo"/>
+            </label>
+            <label>
+                <span>machineType</span>    <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.macineType"/>
+           </label>
+           <label>
+                  <span>计划CT</span>    <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.CTtime"/>
+        </label>
+           
+            
+            
+            <p style=" margin-top: 60px;
+             margin-bottom: 20px;margin-left:-580px">参数</p>
+            <div style="margin-top:20px;width:100%">
+            <label class="labelclass">
+                  <span>StationVer</span>  <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.StationVer"/>
+            </label>
+            <label class="labelclass">
+                  <span>A出料个数</span>  <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.AOutTrayCount"/><span>(A出料个数不能超过30)</span>
+            </label>
+            <label class="labelclass">
+                  <span>B出料个数</span>  <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.BOutTrayCount"/><span>(B出料个数不能超过30)</span>
+            </label>
+            </div>
+            </div>
+      </section>
+      
+      <footer>
+           
+            <button type="button" class="btnclass" (click)="saveConfig()">保存</button>
+      </footer>
+</div>
